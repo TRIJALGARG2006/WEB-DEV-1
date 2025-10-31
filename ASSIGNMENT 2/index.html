@@ -1,16 +1,21 @@
+<!-- 
+ BTech CSE Core Section - A  
+ Trijal Garg
+ 2501010072
+-->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio</title>
-    
-
+    <title>Trijal Garg's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-    <header id="main-header">
+<body>
+    <header>
         <h1>My Portfolio</h1>
         <nav>
             <ul>
@@ -23,19 +28,16 @@
     </header>
 
     <main>
-
-
         <section id="about">
             <h2>About Me</h2>
-            <div class="about-container">
-                <img src=image1.jpg alt="TRIJAL" class="profile-pic">
-                <p>Welcome to my portfolio. My name is Trijal Garg, and I am training to become a full-stack web developer. My focus is on mastering the fundamentals of web technology to build efficient and scalable apps  </p>
-            </div>
+            <img src="img1.png" alt="Trijal Garg" />
+            <p>Hello! My name is Trijal Garg. I am passionate About computers and technology . i aspire to be a 
+                great software enginneer and also built myself along the way . my goal is to learn web development and make great
+                website.</p>
         </section>
-        <hr>
-
+        <hr class="section-divider">
         <section id="skills">
-            <h2>My Skills</h2>
+            <h2>Technical Skills:</h2>
             <table class="skills-table">
                 <thead>
                     <tr>
@@ -53,56 +55,61 @@
                         <td>Beginner</td>
                     </tr>
                     <tr>
-                        <td>PYTHON</td>
-                        <td>INTERMEDIATE</td>
+                        <td>Python</td>
+                        <td>Intermediate</td>
                     </tr>
                 </tbody>
             </table>
         </section>
-        <hr>
-
+        <hr class="section-divider">
         <section id="projects">
-            <h2>My Projects</h2>
-            <div class="projects-container">
-                <div class="project-card">
-                    <h3>BUDGET TRACKER</h3>
-                    <p>This app allows for tracking income and expenses, categorizing spending, and visualizing financial habits over time. Built with Python.</p>
-                </div>
-                <div class="project-card">
-                    <h3>CALORIE TRACKER</h3>
-                    <p>A health and wellness tool designed to monitor daily food intake. Users can log meals, track calories and macronutrients, and set daily goals to maintain a healthy lifestyle.</p>
-                </div>
+            <h2>My Projects:</h2>
+            <div class="project-container">
+                <article class="project-card">
+                    <h3>Project 1. calorie tracker</h3>
+                    <img src="calorie-tracker.png" alt="calorie tracker" class="project-image" />
+                    <p>Tool to calculate your daily calories</p>
+                </article>
+                <article class="project-card">
+                    <h3>Project 2. Budget tracker</h3>
+                    <img src="Budget_tracker.png" alt="Budget tracker tool" class="project-image" />
+                    <p>Tool to calculate your daily or montly budgets</p>
+                </article>
             </div>
         </section>
-        <hr>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Your message here"></textarea>
-                </div>
-                <button type="submit" class="submit-button">Send Message</button>
-            </form>
-        </section>
-
     </main>
+    <hr class="section-divider">
+    <section id="contact">
+        <h2>Contact Me:</h2>
+        <form action="#" method="post">
+            <table class="contact-table">
+                <tbody>
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input id="name" type="text" placeholder="Enter your name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input id="email" type="email" placeholder="Enter your email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="message">Message:</label></td>
+                        <td><textarea id="message" placeholder="Enter your message" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="center-cell">
+                            <button type="submit">Send</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </section>
 
-
- <footer id="main-footer-content">
-        <p>&copy; 2025 Trijal Garg. All rights reserved.</p>
+    <footer class="site-footer">
+        <a href="#" class="back-to-top">Back to Top</a>
     </footer>
 
-    <a href="#" class="back-to-top">Back to Top</a>
-
 </body>
+
 </html>
